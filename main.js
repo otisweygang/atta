@@ -3,7 +3,7 @@ const i18n = {
   en: {
     title:              '78 Years',
     nav_film:           'Film',
-    nav_story:          'Story',
+    nav_story:          'Gallery',
     nav_support:        'Support',
     nav_credits:        'Credits',
     hero_sub:           'Baqa\'a Valley, West Bank',
@@ -29,7 +29,7 @@ const i18n = {
   ar: {
     title:              '78 Years',
     nav_film:           'الفيلم',
-    nav_story:          'القصة',
+    nav_story:          'معرض الصور',
     nav_support:        'الدعم',
     nav_credits:        'الفريق',
     hero_sub:           'وادي البقعة، الضفة الغربية',
@@ -55,7 +55,7 @@ const i18n = {
   fr: {
     title:              '78 Years',
     nav_film:           'Film',
-    nav_story:          'Histoire',
+    nav_story:          'Galerie',
     nav_support:        'Soutien',
     nav_credits:        'Crédits',
     hero_sub:           'Vallée de Baqa\'a, Cisjordanie',
@@ -81,7 +81,7 @@ const i18n = {
   he: {
     title:              '78 Years',
     nav_film:           'הסרט',
-    nav_story:          'הסיפור',
+    nav_story:          'גלריה',
     nav_support:        'תמיכה',
     nav_credits:        'צוות',
     hero_sub:           'ואדי אל-בקעה, הגדה המערבית',
