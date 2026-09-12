@@ -1,14 +1,14 @@
 /* ─── Translations ──────────────────────────────────────────────────────────── */
 const i18n = {
   en: {
-    title:              'The Gentle Hand of Atta',
+    title:              '78 Years',
     nav_film:           'Film',
     nav_story:          'Story',
     nav_support:        'Support',
     nav_credits:        'Credits',
     hero_sub:           'Baqa\'a Valley, West Bank',
     film_lead:          'A feature film by Bruno Sorrentino & Uri Fruchtmann.',
-    film_desc:          'Atta has farmed the same land in the Baqa\'a Valley of the occupied West Bank his whole life. For 27 years, Bruno Sorrentino has documented it: homes demolished, land seized, water destroyed. Through it all, Atta\'s words remain: "I have no hate. If I let anger turn to hate, something inside me will die." Across four generations, this film bears witness to a quiet, profound resistance and a refusal to hate. This is his story.',
+    film_desc:          'Filmed over 28 years, this feature documentary observes Palestinian farmer Atta Jaber as he looks back on a lifetime in the Occupied West Bank. On the fertile slopes of the Baqa\'a Valley, Atta farms the land his family has cultivated for centuries, which he calls \'My Paradise\'. Since Israel\'s illegal invasion and occupation of the West Bank in 1967, his inheritance has become a battleground, as violent settlers and successive Israeli governments attempt to drive Atta and his family from their land. Atta\'s heartfelt storytelling, centred on his belief that it is wrong to hate anyone, and his refusal therefore, to hate his attackers, is interwoven with testimony filmed by activists over three decades. This recently discovered cache of footage which remarkably survived IDF raids, conveys the continued courage of the activists supporting Atta and the farmers of the nearby Hamra Valley. Atta forms a bond with Jeff Halper, an Israeli academic, activist, and Nobel Peace Prize nominee. Through helping Atta to rebuild his home, obstructing bulldozers and being arrested by the IDF, Jeff becomes one of the family. Atta and Jeff’s solidarity defies the political rhetoric that seeks to further divide Israelis and Palestinians. The film becomes a rare longitudinal record of life under apartheid-like conditions and the threat of expulsion, as Atta’s property is repeatedly demolished, his crops are destroyed, his livestock and even members of his family are physically attacked. Yet year after year, Atta refuses to let his family give in to hate, even as the trauma deepens across four generations. Forced to witness first his children, then his grandchildren suffer, Atta gently perseveres. This film reveals the remarkable power of his peaceful resistance, and his astonishing ability to hold on; to his land, his livelihood, and his humanity.',
     trailer_link:       'Watch the Trailer ↗',
     story_intro:        '"The sound of the bulldozer is the music of the occupation." — Atta Jaber',
     support_lead:       'Stand with Atta. Stand with Palestine.',
@@ -18,14 +18,16 @@ const i18n = {
     credit_directed:    'Directed by',
     credit_journalist:  'Journalist',
     credit_produced:    'Produced by',
+    credit_associate_producer: 'Associate Producer',
     credit_cinematography: 'Cinematography',
     credit_editor:      'Editor',
     credit_sound:       'Sound',
-    footer:             '© 2026 The Gentle Hand of Atta. All rights reserved.',
+    credit_contributor: 'Contributor',
+    footer:             '© 2026 78 Years. All rights reserved.',
     footer_press:       'Press',
   },
   ar: {
-    title:              'اليد الحنون لعطا',
+    title:              '78 Years',
     nav_film:           'الفيلم',
     nav_story:          'القصة',
     nav_support:        'الدعم',
@@ -42,14 +44,16 @@ const i18n = {
     credit_directed:    'إخراج',
     credit_journalist:  'صحفي',
     credit_produced:    'إنتاج',
+    credit_associate_producer: 'منتج مشارك',
     credit_cinematography: 'تصوير',
     credit_editor:      'مونتاج',
     credit_sound:       'صوت',
-    footer:             '© 2026 اليد الحنون لعطا. جميع الحقوق محفوظة.',
+    credit_contributor: 'مساهم',
+    footer:             '© 2026 78 Years. جميع الحقوق محفوظة.',
     footer_press:       'الصحافة',
   },
   fr: {
-    title:              'La Main Douce d\'Atta',
+    title:              '78 Years',
     nav_film:           'Film',
     nav_story:          'Histoire',
     nav_support:        'Soutien',
@@ -66,14 +70,16 @@ const i18n = {
     credit_directed:    'Réalisé par',
     credit_journalist:  'Journaliste',
     credit_produced:    'Produit par',
+    credit_associate_producer: 'Producteur associé',
     credit_cinematography: 'Image',
     credit_editor:      'Montage',
     credit_sound:       'Son',
-    footer:             '© 2026 La Main Douce d\'Atta. Tous droits réservés.',
+    credit_contributor: 'Contributeur',
+    footer:             '© 2026 78 Years. Tous droits réservés.',
     footer_press:       'Presse',
   },
   he: {
-    title:              'היד הרכה של עטא',
+    title:              '78 Years',
     nav_film:           'הסרט',
     nav_story:          'הסיפור',
     nav_support:        'תמיכה',
@@ -90,10 +96,12 @@ const i18n = {
     credit_directed:    'בימוי',
     credit_journalist:  'עיתונאי',
     credit_produced:    'הפקה',
+    credit_associate_producer: 'מפיק שותף',
     credit_cinematography: 'צילום',
     credit_editor:      'עריכה',
     credit_sound:       'צליל',
-    footer:             '© 2026 היד הרכה של עטא. כל הזכויות שמורות.',
+    credit_contributor: 'תורם',
+    footer:             '© 2026 78 Years. כל הזכויות שמורות.',
     footer_press:       'עיתונות',
   },
 };
@@ -111,8 +119,10 @@ function applyLang(lang) {
 
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
-    if (strings[key] !== undefined) {
+    if (strings[key]) {
       el.textContent = strings[key];
+    } else if (i18n.en[key]) {
+      el.textContent = i18n.en[key];
     }
   });
 

@@ -1,6 +1,6 @@
-# The Gentle Hand of Atta
+# 78 Years
 
-Static promotional website for the feature film *The Gentle Hand of Atta* by Bruno Sorrentino & Uri Fruchtmann.
+Static promotional website for the feature film *78 Years* by Bruno Sorrentino & Uri Fruchtmann.
 
 Built with vanilla HTML, CSS, and JavaScript. Supports English, French, Arabic, and Hebrew.
 
