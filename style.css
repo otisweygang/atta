@@ -206,10 +206,11 @@ a { color: inherit; text-decoration: none; }
 }
 
 .hero-text {
-  position: relative;
+  position: absolute;
   z-index: 2;
-  align-self: center;
-  justify-self: center;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 0 clamp(1.25rem, 6vw, 5rem);
   max-width: 680px;
   text-align: center;
@@ -224,16 +225,6 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: 0.04em;
   text-transform: uppercase;
   font-variant-numeric: lining-nums;
-}
-
-.hero-sub {
-  margin-top: 1rem;
-  font-family: 'DM Sans', system-ui, sans-serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.55);
-  font-weight: 300;
 }
 
 /* ─── Section Base ──────────────────────────────────────────────────────────── */
