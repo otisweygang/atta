@@ -27,6 +27,9 @@
         <a href="#story" data-i18n="nav_story">Gallery</a>
         <a href="#credits" data-i18n="nav_credits">Credits</a>
         <a href="#support" data-i18n="nav_support">Support</a>
+        <a href="#" aria-label="Instagram" class="nav-social">
+          <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+        </a>
       </div>
       <div class="nav-right">
         <div class="lang-switcher">
@@ -45,6 +48,9 @@
       <a href="#story" data-i18n="nav_story">Gallery</a>
       <a href="#credits" data-i18n="nav_credits">Credits</a>
       <a href="#support" data-i18n="nav_support">Support</a>
+      <a href="#" aria-label="Instagram" class="nav-social">
+        <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+      </a>
       <div class="lang-switcher">
         <button class="lang-btn active" data-lang="en">EN</button>
         <button class="lang-btn" data-lang="fr">FR</button>
@@ -63,7 +69,7 @@
       </picture>
     </div>
     <div class="hero-text">
-      <h1 data-i18n="title">78 Years</h1>
+      <h1 data-i18n="title">78 YEARS</h1>
       <p class="hero-sub" data-i18n="hero_sub">Baqa'a Valley, West Bank</p>
     </div>
   </section>
@@ -194,133 +200,124 @@
   <section id="credits" class="section credits-section">
     <div class="section-inner">
       <div class="section-label" data-i18n="nav_credits">Credits</div>
-      <div class="credits-grid">
-        <!-- Atta -->
-        <div class="credit-person">
-          <div class="credit-photo">
-            <picture>
-              <source srcset="assets/credits/Atta.webp" type="image/webp" />
-              <img src="assets/credits/Atta.png" alt="Atta" loading="lazy" />
-            </picture>
+
+      <div class="credits-group">
+        <div class="credits-subhead" data-i18n="credits_in_film">In the Film</div>
+        <div class="credits-grid">
+          <!-- Atta -->
+          <div class="credit-person">
+            <div class="credit-photo">
+              <picture>
+                <source srcset="assets/credits/Atta.webp" type="image/webp" />
+                <img src="assets/credits/Atta.png" alt="Atta" loading="lazy" />
+              </picture>
+            </div>
+            <span class="credit-name">Atta</span>
           </div>
-          <span class="credit-name">Atta</span>
-        </div>
-        <!-- Directors have photos -->
-        <div class="credit-person">
-          <div class="credit-photo">
-            <picture>
-              <source srcset="assets/credits/bruno-sorrentino.webp" type="image/webp" />
-              <img src="assets/credits/bruno-sorrentino.jpg" alt="Bruno Sorrentino" loading="lazy" />
-            </picture>
+          <div class="credit-person">
+            <div class="credit-photo">
+              <picture>
+                <source srcset="assets/credits/jeff-halper.webp" type="image/webp" />
+                <img src="assets/credits/jeff-halper.jpg" alt="Jeff Halper" loading="lazy" />
+              </picture>
+            </div>
+            <span class="credit-role" data-i18n="credit_journalist">Journalist</span>
+            <span class="credit-name">Jeff Halper</span>
           </div>
-          <span class="credit-role" data-i18n="credit_directed">Directed by</span>
-          <span class="credit-name">Bruno Sorrentino</span>
-        </div>
-        <div class="credit-person">
-          <div class="credit-photo">
-            <picture>
-              <source srcset="assets/credits/uri-fruchtmann.webp" type="image/webp" />
-              <img src="assets/credits/uri-fruchtmann.jpg" alt="Uri Fruchtmann" loading="lazy" />
-            </picture>
+          <div class="credit-person no-photo">
+            <span class="credit-role" data-i18n="credit_contributor">Contributor</span>
+            <span class="credit-name">Rodaina Jaber</span>
           </div>
-          <span class="credit-role" data-i18n="credit_directed">Directed by</span>
-          <span class="credit-name">Uri Fruchtmann</span>
-        </div>
-        <div class="credit-person">
-          <div class="credit-photo">
-            <picture>
-              <source srcset="assets/credits/jeff-halper.webp" type="image/webp" />
-              <img src="assets/credits/jeff-halper.jpg" alt="Jeff Halper" loading="lazy" />
-            </picture>
+          <div class="credit-person no-photo">
+            <span class="credit-role" data-i18n="credit_contributor">Contributor</span>
+            <span class="credit-name">Amoneh Jaber</span>
           </div>
-          <span class="credit-role" data-i18n="credit_journalist">Journalist</span>
-          <span class="credit-name">Jeff Halper</span>
-        </div>
-        <!-- Placeholder roles — no photo yet -->
-        <div class="credit-person no-photo">
-          <div class="credit-photo-placeholder"></div>
-          <span class="credit-role" data-i18n="credit_associate_producer">Associate Producer</span>
-          <span class="credit-name">Dima Sharif</span>
-        </div>
-        <div class="credit-person no-photo">
-          <div class="credit-photo-placeholder"></div>
-          <span class="credit-role" data-i18n="credit_associate_producer">Associate Producer</span>
-          <span class="credit-name">Heidi Perry</span>
-        </div>
-        <div class="credit-person no-photo">
-          <div class="credit-photo-placeholder"></div>
-          <span class="credit-role" data-i18n="credit_cinematography">Cinematography</span>
-          <span class="credit-name">Ayman Abu Ramouz</span>
-        </div>
-        <div class="credit-person no-photo">
-          <div class="credit-photo-placeholder"></div>
-          <span class="credit-role" data-i18n="credit_cinematography">Cinematography</span>
-          <span class="credit-name">Adi Toledano</span>
-        </div>
-        <div class="credit-person no-photo">
-          <div class="credit-photo-placeholder"></div>
-          <span class="credit-role" data-i18n="credit_cinematography">Cinematography</span>
-          <span class="credit-name">Yair Halper</span>
-        </div>
-        <div class="credit-person no-photo">
-          <div class="credit-photo-placeholder"></div>
-          <span class="credit-role" data-i18n="credit_editor">Editor</span>
-          <span class="credit-name">—</span>
-        </div>
-        <div class="credit-person no-photo">
-          <div class="credit-photo-placeholder"></div>
-          <span class="credit-role" data-i18n="credit_sound">Sound</span>
-          <span class="credit-name">—</span>
-        </div>
-        <div class="credit-person no-photo">
-          <div class="credit-photo-placeholder"></div>
-          <span class="credit-role" data-i18n="credit_contributor">Contributor</span>
-          <span class="credit-name">Rodaina Jaber</span>
-        </div>
-        <div class="credit-person no-photo">
-          <div class="credit-photo-placeholder"></div>
-          <span class="credit-role" data-i18n="credit_contributor">Contributor</span>
-          <span class="credit-name">Amoneh Jaber</span>
-        </div>
-        <div class="credit-person no-photo">
-          <div class="credit-photo-placeholder"></div>
-          <span class="credit-role" data-i18n="credit_contributor">Contributor</span>
-          <span class="credit-name">Jawdi Jaber</span>
-        </div>
-        <div class="credit-person no-photo">
-          <div class="credit-photo-placeholder"></div>
-          <span class="credit-role" data-i18n="credit_contributor">Contributor</span>
-          <span class="credit-name">Jawad Jaber</span>
+          <div class="credit-person no-photo">
+            <span class="credit-role" data-i18n="credit_contributor">Contributor</span>
+            <span class="credit-name">Jawdi Jaber</span>
+          </div>
+          <div class="credit-person no-photo">
+            <span class="credit-role" data-i18n="credit_contributor">Contributor</span>
+            <span class="credit-name">Jawad Jaber</span>
+          </div>
         </div>
       </div>
+
+      <div class="credits-group">
+        <div class="credits-subhead" data-i18n="credits_behind_film">Behind the Film</div>
+        <div class="credits-grid">
+          <!-- Directors have photos -->
+          <div class="credit-person">
+            <div class="credit-photo">
+              <picture>
+                <source srcset="assets/credits/bruno-sorrentino.webp" type="image/webp" />
+                <img src="assets/credits/bruno-sorrentino.jpg" alt="Bruno Sorrentino" loading="lazy" />
+              </picture>
+            </div>
+            <span class="credit-role" data-i18n="credit_directed">Directed by</span>
+            <span class="credit-name">Bruno Sorrentino</span>
+          </div>
+          <div class="credit-person">
+            <div class="credit-photo">
+              <picture>
+                <source srcset="assets/credits/uri-fruchtmann.webp" type="image/webp" />
+                <img src="assets/credits/uri-fruchtmann.jpg" alt="Uri Fruchtmann" loading="lazy" />
+              </picture>
+            </div>
+            <span class="credit-role" data-i18n="credit_directed">Directed by</span>
+            <span class="credit-name">Uri Fruchtmann</span>
+          </div>
+          <!-- Roles without a portrait — name and title only -->
+          <div class="credit-person no-photo">
+            <span class="credit-role" data-i18n="credit_associate_producer">Associate Producer</span>
+            <span class="credit-name">Dima Sharif</span>
+          </div>
+          <div class="credit-person no-photo">
+            <span class="credit-role" data-i18n="credit_associate_producer">Associate Producer</span>
+            <span class="credit-name">Heidi Perry</span>
+          </div>
+          <div class="credit-person no-photo">
+            <span class="credit-role" data-i18n="credit_cinematography">Cinematography</span>
+            <span class="credit-name">Ayman Abu Ramouz</span>
+          </div>
+          <div class="credit-person no-photo">
+            <span class="credit-role" data-i18n="credit_cinematography">Cinematography</span>
+            <span class="credit-name">Adi Toledano</span>
+          </div>
+          <div class="credit-person no-photo">
+            <span class="credit-role" data-i18n="credit_cinematography">Cinematography</span>
+            <span class="credit-name">Yair Halper</span>
+          </div>
+          <div class="credit-person no-photo">
+            <span class="credit-role" data-i18n="credit_editor">Editor</span>
+            <span class="credit-name">—</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- SUPPORT / DONATE -->
   <section id="support" class="section support-section">
     <div class="section-inner">
-      <div class="section-label" data-i18n="nav_support">Support</div>
       <div class="support-body">
         <p class="lead" data-i18n="support_lead">Stand with Atta. Stand with Palestine.</p>
         <p data-i18n="support_desc">Your support helps bring this story to audiences around the world and sustains the ongoing work of documenting resistance and resilience in the West Bank.</p>
         <a href="https://icahd.org/donate" target="_blank" rel="noopener" class="btn-donate" data-i18n="support_btn">Donate</a>
-        <div class="social-links">
-          <p class="social-label" data-i18n="social_follow">Follow the film</p>
-          <div class="social-icons">
-            <a href="#" aria-label="Instagram" class="social-link">
-              <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
-              Instagram
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p data-i18n="footer">&copy; 2026 78 Years. All rights reserved.</p>
-    <a href="press.html" class="footer-press" data-i18n="footer_press">Press</a>
+    <p data-i18n="footer">&copy; 2026 Palio Films. All rights reserved.</p>
+    <div class="footer-right">
+      <a href="press.html" class="footer-press" data-i18n="footer_press">Press</a>
+      <a href="#" aria-label="Instagram" class="footer-social">
+        <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+      </a>
+    </div>
   </footer>
 
   <script src="main.js"></script>
